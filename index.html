@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blackstone Reserve Reels</title>
+<meta name="description" content="Blackstone Reserve Reels — short product films.">
+<meta name="theme-color" content="#0E0004">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="nav">
+  <a href="#top">BRR</a>
+  <div class="nav__links">
+    <a href="#contact">Enquire</a>
+  </div>
+</div>
+
+<img class="hero"
+     src="assets/composite.png"
+     srcset="assets/composite-1280.png 1280w,
+             assets/composite-1920.png 1920w,
+             assets/composite-2560.png 2560w,
+             assets/composite.png 3840w"
+     sizes="100vw"
+     alt="Blackstone Reserve Reels"
+     width="3840" height="1920" fetchpriority="high">
+
+<section id="top"></section>
+
+<section class="work" id="work">
+  <div class="grid">
+
+    <a class="tile tile--tall" href="#">
+      <span class="tile__thumb">
+        <video src="assets/videos/01-purity.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tile__time">0:10 · 9:16</span>
+        <span class="tile__num">01</span>
+      </span>
+      <span class="tile__cap">
+        <span class="tile__title">Purity</span>
+        <span class="tile__kind">Iced lemonade</span>
+      </span>
+    </a>
+
+    <a class="tile" href="#">
+      <span class="tile__thumb">
+        <video src="assets/videos/02-numo.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tile__time">0:15 · 16:9</span>
+        <span class="tile__num">02</span>
+      </span>
+      <span class="tile__cap">
+        <span class="tile__title">Numo</span>
+        <span class="tile__kind">Finance app</span>
+      </span>
+    </a>
+
+    <a class="tile" href="#">
+      <span class="tile__thumb">
+        <video src="assets/videos/03-mountain-forest.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tile__time">0:15 · 16:9</span>
+        <span class="tile__num">03</span>
+      </span>
+      <span class="tile__cap">
+        <span class="tile__title">Mountain Forest</span>
+        <span class="tile__kind">Outdoor pack</span>
+      </span>
+    </a>
+
+    <a class="tile tile--tall" href="#">
+      <span class="tile__thumb">
+        <video src="assets/videos/04-vantr.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tile__time">0:15 · 9:16</span>
+        <span class="tile__num">04</span>
+      </span>
+      <span class="tile__cap">
+        <span class="tile__title">Vantr</span>
+        <span class="tile__kind">Action camera</span>
+      </span>
+    </a>
+
+    <a class="tile tile--tall" href="#">
+      <span class="tile__thumb">
+        <video src="assets/videos/05-jab.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tile__time">0:15 · 9:16</span>
+        <span class="tile__num">05</span>
+      </span>
+      <span class="tile__cap">
+        <span class="tile__title">Jab</span>
+        <span class="tile__kind">Wireless earbuds</span>
+      </span>
+    </a>
+
+    <a class="tile" href="#">
+      <span class="tile__thumb">
+        <video src="assets/videos/06-gotit.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tile__time">0:15 · 16:9</span>
+        <span class="tile__num">06</span>
+      </span>
+      <span class="tile__cap">
+        <span class="tile__title">GotIt</span>
+        <span class="tile__kind">Same-day delivery</span>
+      </span>
+    </a>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+
+  <div class="contact__intro">
+    <div class="eyebrow">Enquire</div>
+    <h2 class="contact__head">Tell us about the product.</h2>
+  </div>
+
+  <form class="form" id="enquiry">
+    <label class="field">Name
+      <input name="name" type="text" required>
+    </label>
+
+    <label class="field">Email
+      <input name="email" type="email" required>
+    </label>
+
+    <label class="field">Company &amp; product
+      <input name="company" type="text">
+    </label>
+
+    <label class="field">What are we making?
+      <textarea name="brief" rows="4"></textarea>
+    </label>
+
+    <!-- spam trap: invisible to people, tempting to bots -->
+    <input type="text" name="_honey" hidden tabindex="-1" autocomplete="off" aria-hidden="true">
+
+    <div class="form__action">
+      <button type="submit">Send enquiry</button>
+      <span class="form__status" id="status" role="status" aria-live="polite"></span>
+    </div>
+  </form>
+
+  <div class="contact__foot"></div>
+
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
